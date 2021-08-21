@@ -1,24 +1,147 @@
+@font-face {
+    font-family: 'George';
+    src: url('../Assets/Font/Louis\ George\ Cafe\ Bold.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
 .home-cont{
     height: 100vh;
     width: 100%;
     /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
+    /* align-items: center; */
+    color: #0D0D0D;
+    
+}
+
+.home-cont .page-profile{
+    height: 100%;
+    width: 40%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+}
+
+.home-cont .logo{
+    height: 15%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
     align-items: center;
 }
-/* .page-block{
-    width: 100%;
-    height: 100%;
-} */
-.page-profile{
-    max-width: 30vw;
-    width: 100%;
-    height: 50vh;
-    border-radius: 10px;
-    border: solid 1px black;
-    background-color: white;
+
+.logo .close, .dashboard .close{
+    font-size: 2vmax;
 }
-header{
+
+.home-cont .logo>img{
+    height: 100%;
+    /* width: 100%; */
+    object-fit: contain;
+}
+
+.home-cont .content{
+    
+    flex: 1;
     width: 100%;
-    background-color: teal;
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: justify-content 5s;
+}
+
+.content .avatar{
+    height: 7vmax;
+    width: 7vmax;
+}
+
+.content .username{
+    font-family: 'George';
+    font-size: 1.5vmax;
+}
+
+.content .dashboard{
+    display: flex;
+    align-items: center;
+    font-family: 'George';
+    font-size: 1.5vmax;
+}
+
+.content .dropdowncont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.dropdowncont .portfolio{
+    font-family: 'Montserrat';
+    font-size: 1.2vmax;
+    font-weight: bold;
+    margin: 1vh 0px;
+}
+
+.content .wallet{
+    display: flex;
+    align-items: center;
+}
+
+.wallet .wallet-img{
+    color: #36B5CB;
+    font-size: 2vmax;
+}
+
+.wallet .amount{
+    color: #3089B1;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1vmax;
+    margin-left: 1vmax;
+}
+
+.content .property{
+    font-family: 'George';
+    font-size: 1.5vmax;
+}
+
+@media (max-width: 800px) {
+    .home-cont .page-profile{
+        height: 70%;
+        width: 90%;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: column;
+        /* padding: 0px 10vw; */
+    }
+
+    .home-cont .content{
+        margin-top: 10vh;
+    }
+
+    .content .avatar{
+        height: 10vmax;
+        width: 10vmax;
+    }
+
+    .content .username{
+        font-family: 'George';
+        font-size: 2vmax;
+    }
+
+    .wallet .wallet-img{
+        color: #36B5CB;
+        font-size: 3vmax;
+    }
+
+    .wallet .amount{
+        color: #3089B1;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 1.5vmax;
+        margin-left: 1vmax;
+    }
 }
