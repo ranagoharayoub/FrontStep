@@ -90,6 +90,10 @@
     align-items: center;
 }
 
+.dropdowncont .portfolio > a{
+    text-decoration: none !important;
+}
+
 .wallet .wallet-img{
     color: #36B5CB;
     font-size: 2vmax;
@@ -106,6 +110,14 @@
 .content .property{
     font-family: 'George';
     font-size: 1.5vmax;
+}
+
+.content .property a{
+    text-decoration: none !important;
+}
+
+.color-gray{
+    background-color: #f8f8f8;
 }
 
 @media (max-width: 800px) {

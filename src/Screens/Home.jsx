@@ -46,15 +46,15 @@ function Home() {
                             </ExpandMore>
                        </div>
 
-                        <div className="dropdowncont" style={toggle? {display:"flex"} : {display:'none'}}>
+                        <div className="dropdowncont color-gray" style={toggle? {display:"flex"} : {display:'none'}}>
                             <div className="portfolio">
-                                Portfolio
+                                <a href="#" style={{color:'#0D0D0D'} } >Portfolio</a>
                             </div>
                             <div className="portfolio">
-                                Wallet 
+                                <a href="#" style={{color:'#0D0D0D'} } >Wallet</a>
                             </div>
                             <div className="portfolio">
-                                Membership
+                                <a href="#" style={{color:'#0D0D0D'} } >Membership</a>
                             </div>
                         </div>
                    </div>  
@@ -62,15 +62,15 @@ function Home() {
                    
 
                    <div className="property">
-                       Property Listing
+                       <a href="#" style={{color:'#0D0D0D'} } >Property Listing</a>
                    </div>
 
                    <div className="property">
-                        About Us
+                        <a href="#"style={{color:'#0D0D0D'} }>About Us</a>
                    </div>
 
                    <div className="property">
-                        FAQ
+                        <a href="#"style={{color:'#0D0D0D'} }>FAQ</a>
                    </div>
 
                </div>
