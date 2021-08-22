@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import logo from '../Assets/Media/logo.svg'
 import './Home.css'
 
+/*eslint-disable*/
+
 
 function Home() {
 
